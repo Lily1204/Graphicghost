@@ -1,0 +1,50 @@
+.Navbar {
+  background-color: white;
+  display: flex;
+  padding: 16px;
+  color: black;
+
+  &__Link {
+    padding-right: 20px;
+
+    &-toggle {
+      display: none;
+    }
+  }
+
+  &__Items {
+    display: flex;
+  }
+
+  &__Items--right {
+    margin-left: auto;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}

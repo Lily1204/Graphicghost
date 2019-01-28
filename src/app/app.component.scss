@@ -1,0 +1,463 @@
+@import '../../src/variables.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  background-color: $white;
+  font-family: 'Montserrat';
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: $white;
+  color: $black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: $secondary;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: $black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/***************************************** section1 **************************/
+.section1 {
+  background-color: $primary;
+
+  .img {
+    width: 800px;
+    height: 800px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../assets/images/image1.png");
+  }
+
+  .content {
+    margin: auto;
+    max-width: 600px;
+    width: 50%;
+    margin-top: 200px;
+
+    .title {
+      font-size: 1.9rem;
+      color:$white;
+      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 15px;
+      color:$white;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.img2 {
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 100px;
+  background-image: url("../assets/images/image1.png");
+}
+
+.gt-xs {
+  .perspiciatis {
+    height: 500px;
+  }
+
+  .img {
+    background: none;
+  }
+
+  .content {
+    width: 60%;
+    margin-top: 100px;
+  }
+
+}
+
+/****************************** section2 *****************************/
+
+.section2 {
+  width: 100%;
+  padding: 60px 10px;
+  background-color:$white;
+  margin: 0 auto;
+
+  &-title {
+    font-size: 2rem;
+    color:$secondary;
+    text-align: center;
+  }
+
+  &-description {
+    color:$secondary;
+    margin-bottom: 15px;
+    padding: 0 35px;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .text-description {
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../assets/images/check_circle.png");
+  }
+
+  .container-card {
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .sections-info img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+/****************************** section3 *****************************/
+.section3 {
+  margin: 0px;
+  background-color: $primary;
+
+  &-title {
+    color:$white;
+  }
+
+  &-info {
+    background-color: $primary;
+    height: 350px;
+
+    &_1 {
+      margin: 0 auto;
+
+      .subtite {
+        margin-top: 20px;
+        color:$white;
+      }
+    }
+  }
+
+  &-info2 {
+    background-color: $secondary;
+    height: 350px;
+
+    &_1 {
+      margin: 0 auto;
+
+      .subtite {
+        margin-top: 20px;
+        color:$white;
+      }
+    }
+  }
+}
+/**************************** section4 ********************************/
+.section4 {
+  margin: 20px;
+  padding: 30px;
+  align-items: center;
+
+  .items {
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+
+    .item {
+      padding: 7px;
+    }
+  }
+
+  .title {
+    text-align: center;
+
+  }
+
+  .description {
+    text-align: center;
+  }
+
+
+
+  .image-conainer {
+    height: 200px;
+    margin: 10px;
+    background-color: $primary;
+  }
+
+  .text-container {
+    max-width: 400px;
+  }
+}
+
+
+
+/******************************* section5 ***************************/
+.section5 {
+  padding: 10px;
+  background-color: $primary;
+
+  &-title {
+    padding: 10px;
+    color:$white;
+    text-align: center;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+/****************************** section6 *****************************/
+.section6 {
+  margin: 0 auto;
+
+  &-card {
+    width: 200px;
+    height: 130px;
+    background-color: $primary;
+  }
+
+  .container-text {
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 400px;
+
+  }
+
+  .container-text2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 250px;
+  }
+}
+
+/****************************** section7 ****************************/
+.section7 {
+  background-color: $primary;
+
+  .input {
+    height: 40px;
+    width: 180px;
+    background-color:$white;
+    border-radius: 5px;
+  }
+}
+
+
+
+/***************************** section 8 *****************************/
+
+.foot-image {
+  padding: 20px;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  line-height: 50px;
+}
+
+.chart svg {
+  position: absolute;
+  top: -5px;
+  left: -15px;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 5;
+  stroke-dasharray: 534;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 67;
+  animation: show75 3s;
+}
+
+.chart[data-percent='85'] .outer {
+  stroke-dashoffset: 100;
+  animation: show75 3s;
+}
+
+.chart[data-percent='90'] .outer {
+  stroke-dashoffset: 130;
+  animation: show75 3s;
+}
+
+.chart[data-percent='95'] .outer {
+  stroke-dashoffset: 180;
+  animation: show75 3s;
+}
+
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 534;
+  }
+}
+
+@keyframes show85 {
+  from {
+    stroke-dashoffset: 500;
+  }
+}
+
+.icon {
+  color:$white;
+}
+
+.icon1 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100px;
+  color:$white;
+}
+
+.icon2 {
+  width: 400px;
+  margin: 0 auto;
+  color:$white;
+}
+
+//////////////////compartido//////////////////////////////
+.sections-info {
+  margin: 20px;
+  padding: 15px;
+}
+
+.title-sections {
+  margin: 20px;
+  padding: 20px;
+}
+
+.description {
+  color:$white;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color:$white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+}
+
+.button1 {
+  background-color: rgb(83, 83, 105);
+  color:$white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border: 2px solid $black;
+}
+
+.card-info {
+  width: 250px;
+  height: 290px;
+  margin: 15px;
+}
+
+@media all and (max-width: 670px) {
+  .card-section6 {
+    width: 320px;
+    height: 200px;
+  }
+
+  .sections-info {
+    max-width: 600px;
+  }
+
+  .text {
+    max-width: 200px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .content {
+    max-width: 800px;
+    width: 80%;
+  }
+}

@@ -1,0 +1,98 @@
+
+.footer {
+    background-color: rgb(83, 83, 105);
+    &-info {
+        background-color: rgb(83, 83, 105);
+        height: 300px;
+        &_container {
+            margin: 0 auto;
+          }
+      }
+    &-info2 {
+        background-color: rgb(62, 62, 75);
+        height: 300px;
+    }
+    &-description {
+        color: white;
+      }
+      &-title {
+        color: white;
+      }
+    
+      &-list {
+        max-width: 100%;
+        background-color: rgb(62, 62, 75);
+        &_title {
+            padding: 10px;
+            color: white;
+          }
+      }
+      .icon {
+        color: white;
+      }
+      .icon2 {
+        width: 400px;
+        margin: 0 auto;
+        color: white;
+      }
+    
+      .icon1 {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        height: 30px;
+        width: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 100px;
+        color: white;
+      }
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 10px 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+      }
+      .button1 {
+        background-color: rgb(83, 83, 105);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 10px 10px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        border: 2px solid black;
+      }
+  }
+  .contact {
+    padding: 10px;
+    margin: 20px;
+  }
+  .navigation2 {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+
+    a {
+        text-decoration: none;
+        padding: 1.3em;
+        color: white;
+      }
+  }
+  .circle img {
+    width: 50px;
+  }
